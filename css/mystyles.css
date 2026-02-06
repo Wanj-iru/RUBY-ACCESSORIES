@@ -1,0 +1,140 @@
+      body {
+          background-color: crimson;
+          padding: 0;
+          margin: 0;
+          overflow-x: hidden;
+      }
+
+      /* Floating box with responsive design */
+      .floating-box {
+          background-color: rgb(249, 217, 217);
+          padding: 15px;
+          border-radius: 8px;
+          margin: 20px auto;
+          max-width: 90%;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Image styling for consistent sizing */
+      .product-img {
+          height: 250px;
+          object-fit: cover;
+          width: 100%;
+      }
+
+      /* Card styling for consistent height */
+      .card {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+      }
+
+      .card-body {
+          flex-grow: 1;
+      }
+
+      /* Navbar search form responsive styling */
+      .navbar-form {
+          margin-top: 10px;
+          width: 100%;
+      }
+
+      /* Responsive table */
+      .hours-table {
+          width: 100%;
+          background-color: bisque;
+      }
+
+      .hours-table td {
+          padding: 8px;
+      }
+
+      /* Marquee responsive font size */
+      .marquee-text {
+          font-size: 1.5rem;
+          padding: 10px 0;
+      }
+
+      /* Fix for carousel height on mobile */
+      .carousel-item img {
+          height: 400px;
+          object-fit: cover;
+      }
+
+      /* Social media icons */
+      .social-icon {
+          width: 32px;
+          height: 32px;
+          margin-right: 10px;
+          transition: transform 0.3s;
+      }
+
+      .social-icon:hover {
+          transform: scale(1.1);
+      }
+
+      /* Footer improvements */
+      footer {
+          background-color: rgb(94, 5, 5);
+          padding: 20px;
+      }
+
+      /* Responsive text sizes */
+      @media (max-width: 768px) {
+          .marquee-text {
+              font-size: 1.2rem;
+          }
+
+          .carousel-caption p {
+              font-size: 1.2rem !important;
+          }
+
+          .carousel-item img {
+              height: 300px;
+          }
+
+          .product-img {
+              height: 200px;
+          }
+
+          /* Stack columns on mobile */
+          .row {
+              margin-left: 0;
+              margin-right: 0;
+          }
+
+          /* Adjust navbar elements for mobile */
+          .navbar-brand {
+              font-size: 1.2rem;
+          }
+
+          /* Make forms full width on mobile */
+          .navbar-form {
+              margin-left: 0 !important;
+              padding-left: 0;
+          }
+
+          /* Adjust floating box for mobile */
+          .floating-box {
+              margin: 20px auto;
+              width: 95%;
+          }
+      }
+
+      @media (max-width: 576px) {
+          .marquee-text {
+              font-size: 1rem;
+          }
+
+          .carousel-item img {
+              height: 250px;
+          }
+
+          .product-img {
+              height: 180px;
+          }
+
+          .floating-box {
+              padding: 10px;
+          }
+      }
